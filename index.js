@@ -1,4 +1,4 @@
-/* let nombre = "irena";
+let nombre = "irena";
 if(nombre === "irena"){
   console.log("saludo");
 }else{
@@ -8,7 +8,7 @@ if(nombre === "irena" || nombre === "irena"){
     alert("hola irena :)");
   }else{
     alert("Quién eres?")
-  } */
+  }
 
   let usuario = prompt("Ingrese un usuario").toLowerCase();
   while(usuario != "irena"){

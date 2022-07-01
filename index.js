@@ -29,6 +29,20 @@ if(nombre === "irena" || nombre === "irena"){
       break;
   
     default:
-      console.log("El usuario tiene nacionalidad no soprtada");
+      console.log("El usuario tiene nacionalidad no soportada");
       break;
   }
+
+  for(let i = 0; i <= 10; i++){
+    if(i === 9){
+      continue;
+    }
+    console.log(i);
+  }
+  for(let i = 10; i <= 20; i++){
+    if(i === 19){
+      continue;
+    }
+    console.log(i);
+  }
+  console.log("finalizamos proceso");

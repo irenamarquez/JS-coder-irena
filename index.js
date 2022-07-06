@@ -1,48 +1,57 @@
-let nombre = "irena";
-if(nombre === "irena"){
+{  
+  function Users(nombre, apellido, edad, email, password)
+    this.nombre = nombre;
+    this.apellido = apellido;
+    this.edad = edad;
+    this.email = email;
+    this.password = password;
+    this.userIsCompleted = function () {
+        if (this.nombre && this.apellido && this.edad && this.email && this.password) {
+            return true;
+        } else {
+            return false;
+        }
+    }
+  function carritoCompra(nombreTarjeta, numeroTarjeta, fecha, codigo)
+  this.nombreTarjeta = nombre;
+  this.numeroTarjeta = numero;
+  this.fecha = fecha;
+  this.codigo = codigo;
+  
+  
+  let user = prompt("Completar datos");
+
+  let nombre = prompt("Ingrese nombre del usuario");
+  let apellido = prompt("Ingrese apellido del usuario");
+  let edad = prompt("Ingrese edad del usuario");
+  let email = prompt("Ingrese email del usuario");
+  let password = prompt("Ingrese password del usuario");
+  
+  let carritoCompra = prompt(agregar al carrito)
+  
+  if(user.userIsCompleted()){
+      users.push(user);
+      alert("Usuario registrado exitosamente!");
+  }else{
+      alert(`Usuario NO registrado.`);       
+  }
+    
+let user = "irena";
+if(user === "irena"){
   console.log("saludo");
 }else{
   console.log("no saludo");
 }
-if(nombre === "irena" || nombre === "irena"){
+if(user === "irena" || user === "irena"){
     alert("hola irena :)");
   }else{
     alert("Quién eres?")
   }
 
-  let usuario = prompt("Ingrese un usuario").toLowerCase();
-  while(usuario != "irena"){
+  let user = prompt("Ingrese un usuario").toLowerCase();
+  while(user = "irena"){
     alert("Usuario incorrecto");
-    usuario = prompt("Ingrese un usuario");
-  }
-  alert("Bienvenido");
-
-  let nacionalidadUsuario = "Argentina";
-
-  switch (nacionalidadUsuario) {
-    case "Brazilian":
-      console.log("Su moneda es el real");
-      break;
-  
-    case "Argentino":
-      console.log("Su moneda es el peso argentino");
-      break;
-  
-    default:
-      console.log("El usuario tiene nacionalidad no soportada");
-      break;
+    user = prompt("Ingrese un usuario");
   }
 
-  for(let i = 0; i <= 10; i++){
-    if(i === 9){
-      continue;
-    }
-    console.log(i);
-  }
-  for(let i = 10; i <= 20; i++){
-    if(i === 19){
-      continue;
-    }
-    console.log(i);
-  }
-  console.log("finalizamos proceso");
+}

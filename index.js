@@ -1,3 +1,4 @@
+
 const productos = [
   { nombre:"jersey", precio: 60 },
   { nombre: "bib", precio: 45 },
@@ -6,6 +7,14 @@ const productos = [
 ]
 
 let carrito = []
+
+/* evento */
+
+let boton = document.getElementById("principal");
+boton.addEventListener("click", respuestaClick);
+function respuestaClick(){
+  console.log("respuesta evento");
+}
 
 let seleccion = prompt ("Hola! Deseas comprar algun producto ALFHO, si o no");
 
@@ -70,6 +79,13 @@ const total = carrito.reduce((acc, el) => acc + el.precio * el.unidades, 0);
 
 console.log(`el total a pagar por su compra es: ${total}`)
 
+let container = document.getElementsByClassName("container");
+
+let indumentaria = document.getElementsByClassName("productos");
+console.log(ropa[0].innerHTML);
+console.log(ropa[1].innerHTML);
+console.log(ropa[2].innerHTML);
+console.log(ropa[3].innerHTML);
 
 /*{
   function Users(nombre, apellido, edad, email, password)

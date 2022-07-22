@@ -1,8 +1,8 @@
 const productos = [
-  { nombre:"jersey", precio: 60 };
-  { nombre: "bib", precio: 45 };
-  { nombre: "media", precio: 15 };
-  { nombre: "cap", precio: 20 };
+  { nombre:"jersey", precio: 60 },
+  { nombre: "bib", precio: 45 },
+  { nombre: "media", precio: 15 },
+  { nombre: "cap", precio: 20 },
 ]
 
 let carrito = []
